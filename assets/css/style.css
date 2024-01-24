@@ -1,0 +1,285 @@
+body{
+  margin: 0;
+  height: 100vh;
+  background-color:#f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y:hidden;
+}
+.container{
+  display: grid;
+  grid-template-columns: 2.6fr 6fr;
+}
+.content{
+  height:95vh;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.attractive-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 19.2vh;
+}
+.attractive-image img{
+  width:50vh;
+}
+.call-to-action{
+  margin-top: 20vh;
+  height: 30vh;
+  text-align: center;
+ color:#3b5867;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.call-to-action h1{
+  font-weight:lighter;
+}
+.call-to-action p.incitation-paragraph{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  position: relative;
+  top:-1vh;
+}
+.button-call-to-action button{
+padding:1.8vh 1.8vw;
+background-color: #377562;
+border: none;
+border-radius: 30px;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:white;
+cursor: pointer;
+margin-top: 4vh;
+font-size: 0.8rem;
+letter-spacing: 0.05vw;
+}
+.security-message{
+  margin-top: 9vh;
+  color:#8696a0;
+  font-size: 0.9rem;
+}
+.security-message p span img{
+  position: relative;
+  top:0.6vh;
+  padding-right: 0.09vw;
+}
+.side{
+  background-color: white;
+  border-right: 0.1px solid rgba(0, 0, 0, 0.1);
+
+}
+.menu-header{
+background-color: #eff2f5;
+height: 0vh;
+padding: 4.6vh;
+display: flex;
+align-items: center;
+}
+.profile-img{
+  display:flex;
+position: relative;
+left: -1vw;
+ 
+}
+.profile-img img{
+  width: 2.9vw;
+  border-radius: 100%;
+}
+nav.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 11.7%
+}
+nav.header ul {
+  display: flex;
+  align-items: center;
+}
+nav.header ul li{
+  list-style: none;
+  padding: 0 0.94vw;
+  display: inline;
+  cursor: pointer;
+}
+nav.header ul li svg{
+  display: flex;
+  color:#54656f;
+}
+.search{
+  position: relative;
+  top:-0.2vh;
+  background-color: white;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  width: 28.9vw;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+#input-search{
+  width: 26vw;
+  background-color: #f0f2f5;
+  height: 5.5vh;
+  border: none;
+  border-radius: 7px;
+  margin-left: 1.5%;
+}
+.search span{
+  display: block;
+ color: #8696a0;
+margin: 0 auto;
+position: relative;
+left: 0.3vw;
+cursor: pointer;
+
+}
+.research-icon{
+  background-image:url("/assets/images/search-alt-1-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 15px;
+  background-position: 15px center;
+  padding-left: 5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+input::placeholder{
+  cursor:none
+}
+
+nav.inbox{
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height: 40vh;
+  position: relative;
+  top: -0.3vh;
+}
+nav.inbox::-webkit-scrollbar {
+  width: 6px;
+}
+
+nav.inbox::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+nav.inbox::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+nav.inbox ul{
+  margin: 0 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav.inbox ul li.onwork{
+list-style: none;
+border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
+display: flex;
+height: 11.5vh;
+align-items: center;
+}
+nav.inbox ul li.onwork:hover{
+  background-color: #f0f2f5;
+}
+nav.inbox ul li.save-afrika{
+  list-style: none;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 11.5vh;
+  align-items: center;
+  }
+  nav.inbox ul li.save-afrika:hover{
+    background-color: #f0f2f5;
+  }
+  .save-afrika .inbox-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -0.5vh;
+  }
+  .save-afrika.inbox-label .inbox-name{
+    position: relative;
+    top: 2.6vh;
+    left: 2.4vw;
+  }
+  .save-afrika .inbox-label .last-message{
+  position: relative;
+  top: -2.4vh;
+  left: 2.4vw;
+  font-size: 0.8rem;
+  color: #8696a0;
+  }
+  .save-afrika .time-and-notif{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color:#8696a0;
+    position: relative;
+    left: 11vw;
+    top: 0.1vh;
+    line-height: 3.8vh;
+  }
+  .save-afrika .time-and-notif .notif{
+    position: relative;
+    left: -0.1vw;
+    top: -0.3vh;
+    display:block;
+    background-color: #66d367;
+    text-align: center;
+    width:1.8vw;
+    border-radius: 100%;
+    color: white;
+    font-weight: 600;
+  }
+.inbox-photo img{
+  width: 3.5vw;
+  border-radius: 100%;
+  position: relative;
+  left: 0.95vw;
+}
+.inbox-label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* width: 18vw; */
+  /* line-height: 1vh; */
+  position: relative;
+  top: -0.5vh;
+}
+.inbox-label .inbox-name{
+  position: relative;
+  top: 2.6vh;
+  left: 2.4vw;
+}
+.inbox-label .last-message{
+position: relative;
+top: -2.4vh;
+left: -0.3vw;
+font-size: 0.8rem;
+color: #8696a0;
+}
+.tool-photo{
+  position: relative;
+  top:0.7vh
+}
+.time-and-spin{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color:#8696a0;
+  position: relative;
+  left: 3.5vw;
+  top: 0.1vh;
+  line-height: 3.8vh;
+}
+.time-and-spin .spin{
+  position: relative;
+  left: 3.9vw;
+}
